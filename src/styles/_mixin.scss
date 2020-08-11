@@ -1,0 +1,14 @@
+/** @format */
+
+@mixin title($color) {
+  font-family: 'Proxima Nova Regular';
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.37;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: $color;
+}

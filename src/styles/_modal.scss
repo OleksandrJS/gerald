@@ -1,0 +1,111 @@
+/** @format */
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  &_title {
+    @include title(#000000);
+    margin-bottom: 20px;
+  }
+  &_wrapper {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    margin: 300px auto;
+    width: 300px;
+    height: 250px;
+    opacity: 1;
+    z-index: 100;
+    & span {
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    & input[type='text'] {
+      width: 198px;
+      height: 30px;
+      outline: none;
+      border: none;
+      margin-bottom: 6px;
+      background: #ffffff;
+      background: linear-gradient(-45deg, transparent 8px, #ffffff 0);
+      padding-left: 22px;
+      font-family: 'Proxima Nova Regular';
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.05;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+      &::placeholder {
+        font-family: 'Proxima Nova Regular';
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.05;
+        letter-spacing: normal;
+        text-align: left;
+        color: #85888e;
+      }
+      &:nth-child(1) {
+        margin-top: 20px;
+      }
+    }
+    & input[type='submit'] {
+      width: 141px;
+      height: 43px;
+      background-color: #b12524;
+      border: 0;
+      outline: none;
+      background: linear-gradient(-45deg, transparent 8px, #b12524 0);
+      margin-top: 15px;
+      font-family: 'Proxima Nova Regular';
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.46;
+      letter-spacing: normal;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../img/modal_bg.png) no-repeat center;
+      z-index: -1;
+    }
+  }
+  &_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(215, 174, 78, 0.55);
+    z-index: 99;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  display: block;
+}

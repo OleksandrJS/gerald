@@ -1,0 +1,110 @@
+/** @format */
+
+.souvenirs {
+  background-color: #eff2f4;
+  padding-top: 35px;
+  padding-bottom: 28px;
+  overflow: hidden;
+  &_wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    @media (max-width: 1340px) {
+      padding: 35px 10px 0 10px;
+    }
+    & > a {
+      display: inline-block;
+      width: 177px;
+      height: 53px;
+      background-color: #d7ae4e;
+      background: linear-gradient(-45deg, transparent 8px, #d7ae4e 0);
+      margin-top: 33px;
+      font-family: 'Proxima Nova Regular';
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 3.5;
+      letter-spacing: normal;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    & > p {
+      display: inline-block;
+      font-family: 'Proxima Nova Regular';
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.36;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+      margin-left: 24px;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+      & a {
+        color: #d7ae4e;
+      }
+    }
+    & h2 {
+      @include title(#000000);
+      position: relative;
+      display: inline-block;
+      margin-bottom: 50px;
+      &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #b12524;
+        position: absolute;
+        top: 38px;
+        left: 0;
+      }
+    }
+    &-img {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      & > img:nth-child(1) {
+        width: 344px;
+        height: 385px;
+      }
+      @media (max-width: 1200px) {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 400px) {
+        & > img:nth-child(1) {
+          width: 260px;
+          height: 300px;
+        }
+      }
+      &_cups {
+        padding-right: 140px;
+        padding-bottom: 160px;
+        position: relative;
+        @media (max-width: 500px) {
+          padding-left: 80px;
+          margin-left: 40px;
+        }
+        & img:nth-child(2) {
+          position: absolute;
+          top: 140px;
+          left: 140px;
+          @media (max-width: 500px) {
+            top: 150px;
+            left: 110px;
+          }
+        }
+      }
+    }
+  }
+}

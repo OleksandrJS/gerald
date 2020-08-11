@@ -1,0 +1,33 @@
+/** @format */
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font-family: 'Proxima Nova Regular';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@import './mixin';
+@import './header';
+@import './about';
+@import './gallery';
+@import './souvenirs';
+@import './gMap';
+@import './footer';
+@import './modal';

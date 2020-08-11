@@ -1,0 +1,10 @@
+/** @format */
+
+.gMap {
+  height: 463px;
+  border-top: 1px #b12524 solid;
+  border-bottom: 1px #b12524 solid;
+  @media (max-width: 800px) {
+    height: 300px;
+  }
+}
