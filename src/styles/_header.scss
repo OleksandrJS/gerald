@@ -12,6 +12,7 @@
   }
   @media (max-width: 768px) {
     overflow: hidden;
+    padding-bottom: 7px;
   }
   &-btn {
     cursor: pointer;
@@ -411,6 +412,9 @@
       max-width: 327px;
       position: relative;
       z-index: 2;
+      @media (max-width: 768px) {
+        margin-top: 5px;
+      }
       @media (max-width: 400px) {
         max-width: 220px;
         padding: 14px 0px 34px 0px;
